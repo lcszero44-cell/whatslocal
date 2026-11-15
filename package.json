@@ -1,0 +1,33 @@
+{
+  "name": "whatslocal-n8n",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Gerenciador local de instâncias WhatsApp com integração para n8n.",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env src/server/index.js",
+    "check": "node --check src/server/index.js && node --check src/server/routes/api.js && node --check src/server/services/instance-manager.js && node --check src/server/services/webhook-dispatcher.js && node --check src/server/security.js"
+  },
+  "dependencies": {
+    "@hapi/boom": "10.0.1",
+    "@whiskeysockets/baileys": "7.0.0-rc14",
+    "express": "5.3.0",
+    "pino": "10.4.0",
+    "qrcode": "1.5.4",
+    "socket.io": "4.8.4",
+    "socket.io-client": "4.8.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.5",
+    "@vitejs/plugin-react": "6.3.0",
+    "tailwindcss": "4.3.5",
+    "vite": "8.3.8",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  }
+}

@@ -1,0 +1,31 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Sessões e autenticação do WhatsApp (Baileys)
+auth_info/
+data/
+
+# Logs
+logs/
+*.log
+
+# Build
+dist/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos zip/backup
+*.zip
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
